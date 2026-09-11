@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header class="game-header">
+            <div>
+                <p class="small-title">RohitCodingLab GAME</p>
+                <h1>Tic-Tac-Toe</h1>
+            </div>
+
+            <button id="resetScoreBtn" class="reset-score">
+                Reset Score
+            </button>
+        </header>
+
+
+        <!-- Mode Selection -->
+        <section class="mode-section">
+
+            <button
+                class="mode-btn active"
+                data-mode="computer"
+            >
+                🤖 vs Computer
+            </button>
+
+            <button
+                class="mode-btn"
+                data-mode="player"
+            >
+                👥 vs Player
+            </button>
+
+        </section>
+
+
+        <!-- Score Board -->
+        <section class="score-board">
+
+            <div class="score-card player-x">
+                <span class="player-symbol">X</span>
+                <span class="player-name">Player X</span>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score-card draws">
+                <span class="player-symbol">＝</span>
+                <span class="player-name">Draws</span>
+                <strong id="scoreDraw">0</strong>
+            </div>
+
+            <div class="score-card player-o">
+                <span class="player-symbol">O</span>
+                <span class="player-name">Player O</span>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- Turn Indicator -->
+        <div class="turn-indicator">
+            <span id="turnText">Your turn</span>
+        </div>
+
+
+        <!-- Game Board -->
+        <section class="board" id="board">
+
+            <button class="cell" data-index="0"></button>
+            <button class="cell" data-index="1"></button>
+            <button class="cell" data-index="2"></button>
+
+            <button class="cell" data-index="3"></button>
+            <button class="cell" data-index="4"></button>
+            <button class="cell" data-index="5"></button>
+
+            <button class="cell" data-index="6"></button>
+            <button class="cell" data-index="7"></button>
+            <button class="cell" data-index="8"></button>
+
+        </section>
+
+
+        <!-- Result -->
+        <div id="resultMessage" class="result-message">
+            Make your move
+        </div>
+
+
+        <!-- New Game -->
+        <button id="newGameBtn" class="new-game-btn">
+            New Game
+        </button>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
